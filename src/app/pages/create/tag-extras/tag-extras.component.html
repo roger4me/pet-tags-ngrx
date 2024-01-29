@@ -1,0 +1,27 @@
+<!-- src/app/pages/create/tag-extras/tag-extras.component.html -->
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h3>Extras</h3>
+    <p class="form-text text-muted">Select any extras you would like to add.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 offset-sm-2" style="text-align: right">
+    <label>
+      <input
+        type="checkbox"
+        [(ngModel)]="tagClip"
+        (change)="toggleClip(tagClip)"
+      />
+      Include tag clip
+    </label>
+  </div>
+
+  <div class="col-sm-5">
+    <label>
+      <input type="checkbox" [(ngModel)]="gems" (change)="toggleGems(gems)" />
+      Add gems
+    </label>
+  </div>
+</div>

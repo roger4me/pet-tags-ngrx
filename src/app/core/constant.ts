@@ -1,0 +1,1 @@
+export const petTagKey = 'petTagKey';
